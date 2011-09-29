@@ -1,10 +1,15 @@
 source 'http://rubygems.org'
 
-gem 'rake', '0.9.2'
+gem 'rake', '0.8.7'
 gem 'rails', '3.0.7'
 
-group :development, :test do
+group :development do
   gem 'rspec-rails',  ">= 2.0.0.beta"
+end
+
+group :test do
+  gem 'rspec-rails', ">= 2.0.0.beta"
+  gem 'spork', '0.9.0.rc8'
 end
 
 # Bundle edge Rails instead:
@@ -32,5 +37,5 @@ gem 'sqlite3'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 # group :development, :test do
-#   gem 'webrat'
+   gem 'webrat'
 # end
